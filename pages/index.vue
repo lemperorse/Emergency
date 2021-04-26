@@ -1,63 +1,25 @@
 <template>
-<v-row justify="center" align="center">
-    <v-col cols="12" sm="8" md="6">
-        <div class="text-center">
-            <logo />
-            <vuetify-logo />
-        </div>
-        <v-card>
-            <v-card-title class="headline">
-                Welcome to the Vuetify + Nuxt.js template
-            </v-card-title>
-            <v-card-text>
-                <p>Vuetify is a progressive Material Design component framework for Vue.js. It was designed to empower developers to create amazing applications.</p>
-                <p>
-                    For more information on Vuetify, check out the <a href="https://vuetifyjs.com" target="_blank" rel="noopener noreferrer">
-                        documentation
-                    </a>.
-                </p>
-                <p>
-                    If you have questions, please join the official <a href="https://chat.vuetifyjs.com/" target="_blank" rel="noopener noreferrer" title="chat">
-                        discord
-                    </a>.
-                </p>
-                <p>
-                    Find a bug? Report it on the github <a href="https://github.com/vuetifyjs/vuetify/issues" target="_blank" rel="noopener noreferrer" title="contribute">
-                        issue board
-                    </a>.
-                </p>
-                <p>Thank you for developing with Vuetify and I look forward to bringing more exciting features in the future.</p>
-                <div class="text-xs-right">
-                    <em><small>&mdash; John Leider</small></em>
-                </div>
-                <hr class="my-3">
-                <a href="https://nuxtjs.org/" target="_blank" rel="noopener noreferrer">
-                    Nuxt Documentation
-                </a>
-                <br>
-                <a href="https://github.com/nuxt/nuxt.js" target="_blank" rel="noopener noreferrer">
-                    Nuxt GitHub
-                </a>
-            </v-card-text>
-            <v-card-actions>
-                <v-spacer />
-                <v-btn color="primary" nuxt to="/inspire">
-                    Continue
-                </v-btn>
-            </v-card-actions>
-        </v-card>
-    </v-col>
-</v-row>
+<div class="h-screen flex flex-col bg-main items-center justify-center">
+    <center class="mb-6">
+        <h2 class="text-4xl"><b class="text-purple-800">English</b> For</h2>
+        <h2 class="text-base text-blue-600">Emergency Medical Services</h2>
+    </center>
+    <img class="h-80 shadow-b-xl" src="/ava.png" alt="" />
+    <v-btn @click="$router.push('/home')" color="deep-purple" x-large rounded class="mt-20 shadow-xl" dark><span class="capitalize text-xl font-bold">Start Application</span></v-btn>
+</div>
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
-import VuetifyLogo from '~/components/VuetifyLogo.vue'
-
 export default {
-    components: {
-        Logo,
-        VuetifyLogo
-    }
-}
+    components: {},
+};
 </script>
+
+<style>
+.bg-main {
+    background-color: #d9fad5;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg stroke='%237dcafa' stroke-width='66.7' stroke-opacity='0.05' %3E%3Ccircle fill='%23d9fad5' cx='0' cy='0' r='1800'/%3E%3Ccircle fill='%23dbfad7' cx='0' cy='0' r='1700'/%3E%3Ccircle fill='%23ddfad9' cx='0' cy='0' r='1600'/%3E%3Ccircle fill='%23dffadc' cx='0' cy='0' r='1500'/%3E%3Ccircle fill='%23e1fade' cx='0' cy='0' r='1400'/%3E%3Ccircle fill='%23e3fae0' cx='0' cy='0' r='1300'/%3E%3Ccircle fill='%23e5fae2' cx='0' cy='0' r='1200'/%3E%3Ccircle fill='%23e7fae4' cx='0' cy='0' r='1100'/%3E%3Ccircle fill='%23e9fae6' cx='0' cy='0' r='1000'/%3E%3Ccircle fill='%23ebfae9' cx='0' cy='0' r='900'/%3E%3Ccircle fill='%23edfaeb' cx='0' cy='0' r='800'/%3E%3Ccircle fill='%23effaed' cx='0' cy='0' r='700'/%3E%3Ccircle fill='%23f1faef' cx='0' cy='0' r='600'/%3E%3Ccircle fill='%23f2faf1' cx='0' cy='0' r='500'/%3E%3Ccircle fill='%23f4faf3' cx='0' cy='0' r='400'/%3E%3Ccircle fill='%23f6faf6' cx='0' cy='0' r='300'/%3E%3Ccircle fill='%23f8faf8' cx='0' cy='0' r='200'/%3E%3Ccircle fill='%23fafafa' cx='0' cy='0' r='100'/%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
+}
+</style>

@@ -19,7 +19,7 @@ export default {
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }, 
       { rel:"preconnect" , href:"https://fonts.gstatic.com"},
-      { href:"https://fonts.googleapis.com/css2?family=Dosis&family=Prompt:wght@100&display=swap", rel: 'stylesheet' }, 
+      { href:"https://fonts.googleapis.com/css2?family=Mitr:wght@300&display=swa", rel: 'stylesheet' }, 
       { href:"https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" , rel:"stylesheet"},
       { rel:"stylesheet", href: 'https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css' },
       { rel:"stylesheet", href: 'https://emoji-css.afeld.me/emoji.css' },
@@ -76,5 +76,9 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
+  },
+  server: {
+    host: '192.168.1.196',
+    port: 3000  // default: localhost
   }
 }

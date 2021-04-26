@@ -10,8 +10,10 @@
         <v-avatar color="primary" size="124"></v-avatar>
     </div> -->
     <home-Parallax />
-    <p class="mt-4 tg animate__animated animate__slideInUp text-3xl text-bold">Lesson</p>
-    <home-Card />
+    <div class="p-4">
+  <home-Card />
+    </div>
+
 </div>
 </template>
 
