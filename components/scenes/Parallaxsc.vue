@@ -13,7 +13,7 @@
 
       </div>
       <div class="w-1/2 p-6" >
-        <img  src="/1014017-emergency-services/png/046-broken-leg.png" alt="">
+        <img  src="~/static/1014017-emergency-services/png/046-broken-leg.png" alt="">
       </div>
     </div>
     <div class="relative -mt-11 lg:-mt-24">

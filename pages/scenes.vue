@@ -3,31 +3,31 @@
     <scenes-Parallaxsc />
     <v-tabs>
       <v-tab>
-        <img class="w-10 " src="/1014017-emergency-services/png/004-smartphone.png" alt="" />  1669 Calling
+        <img class="w-10 " src="~/static/1014017-emergency-services/png/004-smartphone.png" alt="" />  1669 Calling
       </v-tab>
       <v-tab-item>
         <video-Animation />
       </v-tab-item>
       <v-tab>
-        <img class="w-10 " src="/1014017-emergency-services/png/020-stretcher.png" alt=""> At the accidental scene
+        <img class="w-10 " src="~/static/1014017-emergency-services/png/020-stretcher.png" alt=""> At the accidental scene
       </v-tab>
       <v-tab-item>
         <video-Animation />
       </v-tab-item>
       <v-tab>
-        <img class="w-10 " src="/1014017-emergency-services/png/001-ambulance.png" alt="">  In the ambulance
+        <img class="w-10 " src="~/static/1014017-emergency-services/png/001-ambulance.png" alt="">  In the ambulance
       </v-tab>
       <v-tab-item>
         <video-Animation />
       </v-tab-item>
       <v-tab>
-        <img class="w-10" src="/1014017-emergency-services/png/016-hospital.png" alt="">  In the ER department
+        <img class="w-10" src="~/static/1014017-emergency-services/png/016-hospital.png" alt="">  In the ER department
       </v-tab>
       <v-tab-item>
         <video-Animation />
       </v-tab-item>
       <v-tab>
-        <img class="w-10" src="/1205526.svg" alt=""> &nbsp;&nbsp; Exercise
+        <img class="w-10" src="~/static/1205526.svg" alt=""> &nbsp;&nbsp; Exercise
       </v-tab>
       <v-tab-item>
         <div class="p-2">

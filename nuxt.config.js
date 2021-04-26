@@ -2,7 +2,16 @@ import colors from 'vuetify/es5/util/colors'
 
 export default {
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
-  ssr: false,
+  ssr: false, // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
+
+  // generate: {
+  //   fallback: true
+  // },
+  target:"static",
+
+  router: {
+    base: "/Emergency/" //ชื่อ github project
+  },
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
@@ -17,17 +26,17 @@ export default {
       { hid: 'description', name: 'description', content: '' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }, 
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       { rel:"preconnect" , href:"https://fonts.gstatic.com"},
-      { href:"https://fonts.googleapis.com/css2?family=Mitr:wght@300&display=swa", rel: 'stylesheet' }, 
+      { href:"https://fonts.googleapis.com/css2?family=Mitr:wght@300&display=swa", rel: 'stylesheet' },
       { href:"https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" , rel:"stylesheet"},
       { rel:"stylesheet", href: 'https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css' },
       { rel:"stylesheet", href: 'https://emoji-css.afeld.me/emoji.css' },
-    ] 
+    ]
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: [  
+  css: [
     '@static/font.css'
   ],
 
@@ -80,5 +89,9 @@ export default {
   server: {
     // host: '192.168.1.196',
     // port: 3000  // default: localhost
-  }
+  },
+  "routes": [
+    { "src": "/_nuxt/.+", "headers": { "cache-control": "s-maxage=31536000" } },
+    { "src": "/(.*)", "dest": "/" }
+  ]
 }

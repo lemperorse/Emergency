@@ -5,7 +5,7 @@
             <v-card class="mt-4 animate__animated animate__zoomIn bg rounded-xl h-64" href="video">
                 <center>
                     <v-card-text>
-                        <img class="w-36 h-42 " src="/1014017-emergency-services/png/004-smartphone.png" alt="">
+                        <img class="w-36 h-42 " src="~/static/1014017-emergency-services/png/004-smartphone.png" alt="">
                     </v-card-text>
                 </center>
                 <v-card-text class="text-center">
@@ -17,7 +17,7 @@
             <v-card class="mt-4 animate__animated animate__zoomIn bg1 rounded-xl h-64" href="video">
                 <center>
                     <v-card-text>
-                        <img class="w-36 h-42 " src="/1014017-emergency-services/png/020-stretcher.png" alt="">
+                        <img class="w-36 h-42 " src="~/static/1014017-emergency-services/png/020-stretcher.png" alt="">
                     </v-card-text>
                 </center>
                 <v-card-text class="text-center">
@@ -29,7 +29,7 @@
             <v-card class="mt-4 animate__animated animate__zoomIn bg2 rounded-xl h-64" href="video">
                 <center>
                     <v-card-text>
-                        <img class="w-36 h-42 " src="/1014017-emergency-services/png/001-ambulance.png" alt="">
+                        <img class="w-36 h-42 " src="~/static/1014017-emergency-services/png/001-ambulance.png" alt="">
                     </v-card-text>
                 </center>
                 <v-card-text class="text-center">
@@ -41,7 +41,7 @@
             <v-card class="mt-4 animate__animated animate__zoomIn bg3 rounded-xl h-64" href="video">
                 <center>
                     <v-card-text>
-                        <img class="w-36 h-42 " src="/1014017-emergency-services/png/016-hospital.png" alt="">
+                        <img class="w-36 h-42 " src="~/static/1014017-emergency-services/png/016-hospital.png" alt="">
                     </v-card-text>
                 </center>
                 <v-card-text class="text-center">
@@ -53,11 +53,11 @@
             <v-card class="mt-4 animate__animated animate__zoomIn bg4 rounded-xl h-64" href="video">
                 <center>
                     <v-card-text>
-                        <img class="w-36 h-42 " src="/2253283-hospital/png/026-medical prescription.png" alt="">
+                        <img class="w-36 h-42 " src="~/static/2253283-hospital/png/026-medical prescription.png" alt="">
                     </v-card-text>
                 </center>
                 <v-card-text class="text-center">
-                    <p class="text-xl font-bold">Test</p> 
+                    <p class="text-xl font-bold">Test</p>
                 </v-card-text>
             </v-card>
         </v-col>
@@ -84,7 +84,7 @@
 
 .bg4 {
     background: #FFADAD;
-} 
+}
 
  .b {
      position: absolute;

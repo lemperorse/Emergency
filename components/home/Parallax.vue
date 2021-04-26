@@ -10,7 +10,7 @@
             <h2 class="text-xl text-white ">Medical Services</h2>
         </div>
         <div class="w-1/2" >
-			<img src="/ava.png" alt="">
+			<img src="~/static/ava.png" alt="">
         </div>
     </div>
 		<div class="relative -mt-11 lg:-mt-24">

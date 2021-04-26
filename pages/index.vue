@@ -4,7 +4,7 @@
         <h2 class="text-4xl"><b class="text-purple-800">English</b> For</h2>
         <h2 class="text-base text-blue-600">Emergency Medical Services</h2>
     </center>
-    <img class="h-80 shadow-b-xl" src="/ava.png" alt="" />
+    <img class="h-80 shadow-b-xl" src="~/static/ava.png" alt="" />
     <v-btn @click="$router.push('/home')" color="deep-purple" x-large rounded class="mt-20 shadow-xl" dark><span class="capitalize text-xl font-bold">Start Application</span></v-btn>
 </div>
 </template>

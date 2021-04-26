@@ -53,7 +53,7 @@
             <v-card-text class="flex flex-col text-center items-center p-8">
               <br>  <br>
                 <h2 class="text-2xl font-bold text-green-600">ผลคะแนน</h2>  <br>
-                <img class="m-4 w-28" src="/trophy.png" alt="">
+                <img class="m-4 w-28" src="~/static/trophy.png" alt="">
                 <h2 class="text-3xl font-bold">20/20</h2>
               <br>  <br>
             </v-card-text>

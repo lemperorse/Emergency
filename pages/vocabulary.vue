@@ -5,7 +5,7 @@
   <div  class="relative -mt-16 lg:-mt-24" @click="dialog=true" >
     <div class=" flex flex-row  m-4 p-2 shadow-lg  rounded-xl bg-white border-b-4  border-blue-600"   >
       <div class="2/12 p-2">
-        <img class="w-16" src="/finishx.png"   alt="">
+        <img class="w-16" src="~/static/finishx.png"   alt="">
       </div>
       <div class="20/12 flex items-center pl-4">
         <h2 class="text-xl font-bold"  >Accents<br><span class="text-base font-normal">Choose accents to learn</span></h2>
@@ -15,7 +15,7 @@
 
 
   <div class="m-2 p-2 rounded-xl  ">
-    <h2 class="flex items-center text-xl font-bold"><img class="h-10 mr-4" src="/voc.svg" alt="">Vocabulary</h2>
+    <h2 class="flex items-center text-xl font-bold"><img class="h-10 mr-4" src="~/static/voc.svg" alt="">Vocabulary</h2>
   </div>
 
   <div class="bg-white m-2 rounded-xl">
@@ -25,7 +25,7 @@
   <v-dialog v-model="dialog">
     <v-card class="bg-gray-50">
       <v-card-title>
-        <img class="w-8" src="/finishx.png"   alt="">  <span class="text-xl font-bold ml-2">Choose Accents</span>
+        <img class="w-8" src="~/static/finishx.png"   alt="">  <span class="text-xl font-bold ml-2">Choose Accents</span>
         <v-spacer></v-spacer>
         <v-btn small color="red" dark fab @click="dialog=false"><v-icon>mdi-close</v-icon></v-btn>
       </v-card-title>
