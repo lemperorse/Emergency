@@ -1,6 +1,6 @@
 <template>
 <v-app dark class="bg">
-  
+
     <!-- <v-app-bar :clipped-left="clipped" fixed app>
         <v-app-bar-nav-icon @click.stop="drawer = !drawer" />
         <v-btn icon @click.stop="miniVariant = !miniVariant">
@@ -19,11 +19,11 @@
         </v-btn>
     </v-app-bar> -->
     <v-main>
-        <v-container style="margin:0!important; padding:0!important;">
+        <v-container style="margin:0!important; padding:0!important; background-color:#F4F4F4;">
             <nuxt />
         </v-container>
     </v-main>
- 
+
 </v-app>
 </template>
 

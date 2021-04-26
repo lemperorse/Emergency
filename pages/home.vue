@@ -1,5 +1,5 @@
 <template>
-<div>
+<div >
     <!-- <div class="d-flex justify-space-between mb-6">
         <div class="mt-6">
             <p class="text-3xl tg text-bold animate__animated animate__slideInUp">Emergency</p>
@@ -11,7 +11,7 @@
     </div> -->
     <home-Parallax />
     <div class="p-4">
-  <home-Card />
+      <home-Card />
     </div>
 
 </div>

@@ -1,4 +1,4 @@
-<template> 
+<template>
      <v-row>
          <v-col cols="12" sm="12">
              <v-sheet min-height="70vh" rounded="lg">
@@ -37,10 +37,10 @@
                      <v-row align="center" justify="center" class="pt-4 pb-4 animate__animated animate__zoomIn">
                          <v-btn-toggle rounded>
                              <v-btn href="home">
-                                 <v-icon>mdi-arrow-left</v-icon> 
+                                 <v-icon>mdi-arrow-left</v-icon>
                              </v-btn>
-                             <v-btn href="home">
-                                 <v-icon>mdi-arrow-right</v-icon> 
+                             <v-btn  @click="dialog=true">
+                                 <v-icon>mdi-arrow-right</v-icon>
                              </v-btn>
                          </v-btn-toggle>
                      </v-row>
@@ -48,5 +48,28 @@
              </v-sheet>
          </v-col>
 
-     </v-row> 
+       <v-dialog v-model="dialog">
+         <v-card >
+            <v-card-text class="flex flex-col text-center items-center p-8">
+              <br>  <br>
+                <h2 class="text-2xl font-bold text-green-600">ผลคะแนน</h2>  <br>
+                <img class="m-4 w-28" src="/trophy.png" alt="">
+                <h2 class="text-3xl font-bold">20/20</h2>
+              <br>  <br>
+            </v-card-text>
+         </v-card>
+       </v-dialog>
+
+     </v-row>
 </template>
+
+<script>
+export default {
+  components: {},
+  data:()=>{
+    return ({
+      dialog:false
+    })
+  }
+}
+</script>

@@ -1,16 +1,44 @@
-<template> 
+<template>
 <div>
-    <scenes-Parallaxsc /> 
-    <ul class="breadcrumb mt-4 animate__animated animate__slideInLeft white">
-        <li><a href="home">Lesson</a></li>
-        <li><a href="vocabulary">Vocabulary</a></li>
-        <li><a href="accent">Accents</a></li>
-        <li>Scenes</li>  
-    </ul>
-    <p class="mt-4 tg animate__animated animate__slideInUp text-3xl text-bold">Choose Scenes</p>
-    <scenes-Cardscenes />
+    <scenes-Parallaxsc />
+    <v-tabs>
+      <v-tab>
+        <img class="w-10 " src="/1014017-emergency-services/png/004-smartphone.png" alt="" />  1669 Calling
+      </v-tab>
+      <v-tab-item>
+        <video-Animation />
+      </v-tab-item>
+      <v-tab>
+        <img class="w-10 " src="/1014017-emergency-services/png/020-stretcher.png" alt=""> At the accidental scene
+      </v-tab>
+      <v-tab-item>
+        <video-Animation />
+      </v-tab-item>
+      <v-tab>
+        <img class="w-10 " src="/1014017-emergency-services/png/001-ambulance.png" alt="">  In the ambulance
+      </v-tab>
+      <v-tab-item>
+        <video-Animation />
+      </v-tab-item>
+      <v-tab>
+        <img class="w-10" src="/1014017-emergency-services/png/016-hospital.png" alt="">  In the ER department
+      </v-tab>
+      <v-tab-item>
+        <video-Animation />
+      </v-tab-item>
+      <v-tab>
+        <img class="w-10" src="/1205526.svg" alt=""> &nbsp;&nbsp; Exercise
+      </v-tab>
+      <v-tab-item>
+        <div class="p-2">
+          <test-quiz />
+        </div>
+
+      </v-tab-item>
+    </v-tabs>
+
 </div>
-</template> 
+</template>
 <style scoped>
 .tg{
     text-shadow: 2px 2px 4px rgb(104, 104, 104);

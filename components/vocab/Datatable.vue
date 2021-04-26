@@ -1,5 +1,5 @@
-<template> 
-<table class="w100 animate__animated animate__slideInUp">
+<template>
+<table class="w100 animate__animated animate__slideInUp  ">
     <tr class="header">
         <th class="text-center bl">Vocabulary</th>
         <th class="text-center">Translation</th>
@@ -114,14 +114,14 @@
         </td>
     </tr>
 
-</table> 
+</table>
 </template>
 
 <script>
 export default {
     data() {
         return {
-            
+
         }
     },
 }
@@ -133,14 +133,14 @@ export default {
     width: 100%;
 }
 
-table {  
+table {
     /* border-collapse: Separate ;  */
-    border-collapse: collapse ; 
+    border-collapse: collapse ;
     /* border-radius: 15px;  */
 }
 
 td, th {
-    border: 1px solid #ffffff; 
+    border: 1px solid #ffffff;
     padding: 8px;
     /* border-radius: 3px; */
 }
@@ -150,6 +150,6 @@ tr:nth-child(even) {
 }
 
 .bl{
-    border-left: 6px solid #2B32B2; 
+    border-left: 6px solid #2B32B2;
 }
 </style>

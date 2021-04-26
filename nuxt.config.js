@@ -78,7 +78,7 @@ export default {
   build: {
   },
   server: {
-    host: '192.168.1.196',
-    port: 3000  // default: localhost
+    // host: '192.168.1.196',
+    // port: 3000  // default: localhost
   }
 }
