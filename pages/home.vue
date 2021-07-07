@@ -1,26 +1,45 @@
 <template>
-<div >
-    <!-- <div class="d-flex justify-space-between mb-6">
-        <div class="mt-6">
-            <p class="text-3xl tg text-bold animate__animated animate__slideInUp">Emergency</p>
-            <p class="text-xl tg animate__animated animate__slideInUp">Medical Services</p>
-        </div>
-		<v-img class="pill animate__animated animate__fadeInUp" src="https://cdn.pixabay.com/photo/2012/04/01/18/54/paramedic-24021_1280.png" alt="" max-height="124" max-width="124">
-        </v-img>
-        <v-avatar color="primary" size="124"></v-avatar>
-    </div> -->
+<div>
+
     <home-Parallax />
     <div class="p-4">
-      <home-Card />
+        <h2 class="text-2xl font-bold">Courses in progress</h2>
+        <div v-for="(course,i) in courses" :key="i">
+             <home-Card :path="`/vocabulary?course=${course.id}`" :name="course.name" :img="course.icon" :color="colors[Math.floor(Math.random() * 5)]" />
+             
+        </div>
+          <home-Card img="/book.png" name="Knowledge"  color="border-pink-600" />
+      
     </div>
 
 </div>
 </template>
 
-<script>
-export default {
+<script lang="ts">
+import { Core } from '@/vuexes/core'
+import { Course } from '@/vuexes/course'
+import {
+    Component,
+    Vue,
+    Watch,
+} from "nuxt-property-decorator"
+@Component({
     components: {},
+})
+export default class Home extends Vue {
+ 
+    colors:string[] = ['border-green-600','border-pink-600','border-purple-600','border-blue-600','border-yellow-600','border-yellow-500']
+  
+
+    get courses(){
+        return Course.courses
+    }
+
+    get colorIndex(){
+        return Math.floor(Math.random() * 4);
+    }
 }
+ 
 </script>
 
 <style scoped>

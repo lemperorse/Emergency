@@ -1,7 +1,7 @@
 <template>
  
     <div  class="flex flex-col mt-4">
-      <div @click="$router.push(path)"  class="w-full">
+      <div    class="w-full">
         <div class=" flex flex-row  m-2 p-2 shadow-lg  rounded-xl bg-white border-b-4  " :class="color" >
           <div class="2/12 p-2">
             <img class="w-16" :src="img" alt="">

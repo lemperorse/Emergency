@@ -5,14 +5,14 @@
     </v-toolbar>
     <div class="flex p-6 bg-voc  justify-center items-center "  >
       <div class="w-1/2">
-        <h2 class="text-3xl text-white font-bold">Traumas</h2>
+        <h2 class="text-3xl text-white font-bold">{{name}}</h2>
         <hr>
         <h2 class="text-base text-white  "><b>English</b> For Emergency</h2>
         <h2 class="text-base text-white " >Medical Services</h2>
 
       </div>
       <div class="w-1/2 p-6" >
-        <img  src="~/static/1014017-emergency-services/png/046-broken-leg.png" alt="">
+        <img  :src="icon" alt="">
       </div>
     </div>
     <div class="relative -mt-11 lg:-mt-24">
@@ -32,6 +32,15 @@
 
   </div>
 </template>
+
+<script>
+export default {
+    props:{
+      name:{default:'Course'},
+      icon:{default:'/1014017-emergency-services/png/046-broken-leg.png'}
+    }
+}
+</script>
 
 <style scoped>
 .bg-voc {

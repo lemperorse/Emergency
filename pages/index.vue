@@ -10,8 +10,13 @@
 </template>
 
 <script>
+import {Core} from '@/vuexes/core'
 export default {
     components: {},
+    async created(){
+        
+    }
+    
 };
 </script>
 

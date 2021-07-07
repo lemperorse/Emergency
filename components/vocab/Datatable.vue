@@ -5,114 +5,17 @@
         <th class="text-center">Translation</th>
         <th class="text-center">sound</th>
     </tr>
-    <tr class="white">
-        <td class="text-center bl">Man</td>
-        <td class="text-center">ชาย</td>
+
+    <tr v-if="vocabularies.length > 0" class="white" v-for="(voc,i) in vocabularies" :key="i">
+        <td class="text-center bl">{{voc.word}}</td>
+        <td class="text-center">{{voc.tranword}}</td>
         <td class="text-center">
-            <v-btn color="success" icon>
+            <v-btn :disabled="(voc.sound==null)" color="success" icon @click="playAudio(voc.sound)">
                 <v-icon>mdi-speaker</v-icon>
             </v-btn>
         </td>
     </tr>
-    <tr>
-        <td class="text-center bl">Girl</td>
-        <td class="text-center">หญิง</td>
-        <td class="text-center">
-            <v-btn color="success" icon>
-                <v-icon>mdi-speaker</v-icon>
-            </v-btn>
-        </td>
-    </tr>
-    <tr class="white">
-        <td class="text-center bl">Man1</td>
-        <td class="text-center">ชาย1</td>
-        <td class="text-center">
-            <v-btn color="success" icon>
-                <v-icon>mdi-speaker</v-icon>
-            </v-btn>
-        </td>
-    </tr>
-    <tr>
-        <td class="text-center bl">Girl1</td>
-        <td class="text-center">หญิง1</td>
-        <td class="text-center">
-            <v-btn color="success" icon>
-                <v-icon>mdi-speaker</v-icon>
-            </v-btn>
-        </td>
-    </tr>
-    <tr class="white">
-        <td class="text-center bl">Man2</td>
-        <td class="text-center">ชาย2</td>
-        <td class="text-center">
-            <v-btn color="success" icon>
-                <v-icon>mdi-speaker</v-icon>
-            </v-btn>
-        </td>
-    </tr>
-    <tr>
-        <td class="text-center bl">Girl2</td>
-        <td class="text-center">หญิง2</td>
-        <td class="text-center">
-            <v-btn color="success" icon>
-                <v-icon>mdi-speaker</v-icon>
-            </v-btn>
-        </td>
-    </tr>
-    <tr class="white">
-        <td class="text-center bl">Man3</td>
-        <td class="text-center">ชาย3</td>
-        <td class="text-center">
-            <v-btn color="success" icon>
-                <v-icon>mdi-speaker</v-icon>
-            </v-btn>
-        </td>
-    </tr>
-    <tr>
-        <td class="text-center bl">Girl3</td>
-        <td class="text-center">หญิง3</td>
-        <td class="text-center">
-            <v-btn color="success" icon>
-                <v-icon>mdi-speaker</v-icon>
-            </v-btn>
-        </td>
-    </tr>
-    <tr class="white">
-        <td class="text-center bl">Man4</td>
-        <td class="text-center">ชาย4</td>
-        <td class="text-center">
-            <v-btn color="success" icon>
-                <v-icon>mdi-speaker</v-icon>
-            </v-btn>
-        </td>
-    </tr>
-    <tr>
-        <td class="text-center bl">Girl4</td>
-        <td class="text-center">หญิง4</td>
-        <td class="text-center">
-            <v-btn color="success" icon>
-                <v-icon>mdi-speaker</v-icon>
-            </v-btn>
-        </td>
-    </tr>
-    <tr class="white">
-        <td class="text-center bl">Man5</td>
-        <td class="text-center">ชาย4</td>
-        <td class="text-center">
-            <v-btn color="success" icon>
-                <v-icon>mdi-speaker</v-icon>
-            </v-btn>
-        </td>
-    </tr>
-    <tr>
-        <td class="text-center bl">Girl5</td>
-        <td class="text-center">หญิง4</td>
-        <td class="text-center">
-            <v-btn color="success" icon>
-                <v-icon>mdi-speaker</v-icon>
-            </v-btn>
-        </td>
-    </tr>
+ 
 
 </table>
 </template>
@@ -121,25 +24,39 @@
 export default {
     data() {
         return {
-
+            response: false
         }
     },
+    props: {
+        vocabularies: {
+            default: []
+        }
+    },
+    async created() {
+        this.response = (this.vocabularies.length > 0)
+    },
+    methods: {
+        async playAudio(url) {
+            new Audio(url).play();
+        }
+    }
+
 }
 </script>
 
 <style scoped>
-
-.w100{
+.w100 {
     width: 100%;
 }
 
 table {
     /* border-collapse: Separate ;  */
-    border-collapse: collapse ;
+    border-collapse: collapse;
     /* border-radius: 15px;  */
 }
 
-td, th {
+td,
+th {
     border: 1px solid #ffffff;
     padding: 8px;
     /* border-radius: 3px; */
@@ -149,7 +66,7 @@ tr:nth-child(even) {
     background-color: #eee;
 }
 
-.bl{
+.bl {
     border-left: 6px solid #2B32B2;
 }
 </style>
