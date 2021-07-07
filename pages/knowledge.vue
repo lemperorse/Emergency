@@ -28,7 +28,7 @@
         </v-card>
     </v-dialog>
     <div @click="(form = list)&&(dialog=true)" v-for="list,i in lists" :key="i">
-        <home-card2 img="~/static/book.png" :name="list.name"  ></home-card2>
+        <home-card2 img="https://lemperorse.github.io/Emergency/book.png" :name="list.name"  ></home-card2>
     </div>
 
 </div>

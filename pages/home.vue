@@ -11,7 +11,7 @@
         <div>
             
         </div>
-          <home-Card  :path="`/knowledge`" img="~/static/book.png" name="Knowledge"  color="border-pink-600" />
+          <home-Card  :path="`/knowledge`" img="https://lemperorse.github.io/Emergency/book.png" name="Knowledge"  color="border-pink-600" />
       
     </div>
 
