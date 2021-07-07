@@ -7,7 +7,7 @@
             <img class="w-16" :src="img" alt="">
           </div>
           <div class="20/12 flex items-center pl-4">
-            <h2 class="text-xl font-bold"  >{{name}}</h2>
+            <h2 class="text-xl font-bold"  >{{name}}</h2> 
           </div>
         </div>
       </div>
@@ -23,6 +23,7 @@
       name:{default:'name'},
       path:{default:'/vocabulary'},
       color:{default:'border-green-600'},
+      text:{default:''},
       img:{default:'https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Video-Game-Controller-Icon-IDV-green.svg/2048px-Video-Game-Controller-Icon-IDV-green.svg.png'}
     }, 
   }

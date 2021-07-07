@@ -8,7 +8,10 @@
              <home-Card :path="`/vocabulary?course=${course.id}`" :name="course.name" :img="course.icon" :color="colors[Math.floor(Math.random() * 5)]" />
              
         </div>
-          <home-Card img="/book.png" name="Knowledge"  color="border-pink-600" />
+        <div>
+            
+        </div>
+          <home-Card  :path="`/knowledge`" img="~/static/book.png" name="Knowledge"  color="border-pink-600" />
       
     </div>
 

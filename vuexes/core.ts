@@ -2,7 +2,7 @@ import {VuexModule, Module, Mutation, Action} from "vuex-class-modules";
 import axios from '@/plugins/axios'
 import _ from "lodash"
 import Swal from 'sweetalert2'
-
+import moment from 'moment'
 @Module({generateMutationSetters: true})
 class CoreModule extends VuexModule {
   //state
@@ -37,6 +37,11 @@ class CoreModule extends VuexModule {
     return await this.getHttp('/api/geo/')
   }
 
+  
+  public fillData(arr:any,key:string,val:any){
+    return _.find(arr,(r)=>{ return r[key] == val  })
+  }
+
   async getBase64(file:any) {
     return new Promise((resolve, reject) => {
       const reader = new FileReader();
@@ -45,6 +50,9 @@ class CoreModule extends VuexModule {
       reader.onerror = error => reject(error);
     });
   }
+  convertDate(date:any) {
+    return moment(date).format('DD/MM/YYYY');
+}
 
   async error(){
     Swal.fire({

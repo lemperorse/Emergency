@@ -2,6 +2,7 @@
 <v-app dark class="bg">
  
     <v-main>
+           <Loading />
         <v-container v-if="response" style="margin:0!important; padding:0!important; background-color:#F4F4F4;">
             <nuxt />  <br>   <br>   <br> 
         </v-container>
@@ -13,7 +14,7 @@
 <script>
 import {Core} from '@/vuexes/core'
 import {Course} from '@/vuexes/course'
-
+import {Web} from '@/vuexes/web'
 
 export default {
     data() {
@@ -22,7 +23,9 @@ export default {
         }
     },
     async created(){
+        await Web.onLoad('Loading Data');
         await Course.getData();
+          await Web.offLoad();
         this.response = true;
     }
 }
