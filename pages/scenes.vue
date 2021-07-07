@@ -6,7 +6,7 @@
         <home-card2 :img="sense.icon" :name="sense.title"></home-card2>
     </div>
   <div @click="$router.push(`/exercises/?lang=${$route.query.lang}&course=${$route.query.course}`)" >
-    <home-card2 img="/book.png" name="Exercise" ></home-card2>
+    <home-card2 img="https://lemperorse.github.io/Emergency/book.png" name="Exercise" ></home-card2>
 
   </div>
 

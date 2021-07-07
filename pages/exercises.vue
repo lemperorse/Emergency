@@ -14,9 +14,9 @@
         <hr>
         <v-radio-group v-model="answer[i]">
             <v-radio :label="`a. ${exercise.a}`" value="a"></v-radio>
-            <v-radio :label="`b. ${exercise.a}`" value="b"></v-radio>
-            <v-radio :label="`c. ${exercise.a}`" value="c"></v-radio>
-            <v-radio :label="`d. ${exercise.a}`" value="d"></v-radio>
+            <v-radio :label="`b. ${exercise.b}`" value="b"></v-radio>
+            <v-radio :label="`c. ${exercise.c}`" value="c"></v-radio>
+            <v-radio :label="`d. ${exercise.d}`" value="d"></v-radio>
         </v-radio-group>
     </div>
     <br>
