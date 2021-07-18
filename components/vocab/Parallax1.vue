@@ -15,7 +15,7 @@
         <img  :src="icon" alt="">
       </div>
     </div>
-    <div class="relative -mt-11 lg:-mt-24">
+    <div class="relative -mt-9 lg:-mt-24">
       <svg viewBox="0 0 1428 174" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
         <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
           <g transform="translate(-2.000000, 44.000000)" fill="#F4F4F4" fill-rule="nonzero">
