@@ -5,7 +5,7 @@
 	</v-toolbar>
     <div class="flex p-6 bg  justify-center items-center "  >
         <div class="w-1/2">
-            <h2 class="text-2xl text-white font-bold">English For</h2>
+            <h2 class="text-2xl text-white font-bold">English for</h2>
             <h2 class="text-xl text-white " >Emergency</h2>
             <h2 class="text-xl text-white ">Medical Services</h2>
         </div>

@@ -7,7 +7,7 @@
       <div class="w-1/2">
         <h2 class="text-3xl text-white font-bold">{{name}}</h2>
         <hr>
-        <h2 class="text-base text-white  "><b>English</b> For Emergency</h2>
+        <h2 class="text-base text-white  "><b>English</b> for Emergency</h2>
         <h2 class="text-base text-white " >Medical Services</h2>
 
       </div>
