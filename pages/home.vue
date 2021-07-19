@@ -1,12 +1,11 @@
 <template>
-<div>
+<div class="" >
 
-    <home-Parallax />
-    <div class="p-4">
+    <home-Parallax class=""/>
+    <div class="p-4 ">
         <h2 class="text-2xl font-bold">Courses in progress</h2>
         <div v-for="(course,i) in courses" :key="i">
              <home-Card :path="`/vocabulary?course=${course.id}`" :name="course.name" :img="course.icon" :color="colors[Math.floor(Math.random() * 5)]" />
-             
         </div>
         <div>
             

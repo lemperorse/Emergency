@@ -1,5 +1,5 @@
 <template>
-<div class="h-screen flex flex-col bg-main items-center justify-center">
+<div class="h-screen  flex flex-col bg-main items-center justify-center">
     <center class="mb-6">
         <h2 class="text-4xl"><b class="text-purple-800">English</b> for</h2>
         <h2 class="text-base text-blue-600">Emergency Medical Services</h2>

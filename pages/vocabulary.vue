@@ -13,14 +13,13 @@
         </div>
     </div>
 
-    <div class="m-2 p-2 rounded-xl  ">
+    <div class="m-2 p-2 rounded-xl ">
         <h2 class="flex items-center text-xl font-bold"><img class="h-10 mr-4" src="~/static/voc.svg" alt="">Vocabulary</h2>
     </div>
 
-    <div class="bg-white m-2 rounded-xl">
+    <div class="bg-white m-2 rounded-xl ">
         <vocab-Datatable :vocabularies="vocabulary" />
-    </div>
-
+    </div> 
     <v-dialog v-model="dialog" v-if="dialog">
         <v-card class="bg-gray-50">
             <v-card-title>
