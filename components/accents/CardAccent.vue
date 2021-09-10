@@ -5,7 +5,7 @@
             <v-card class=" animate__animated animate__zoomIn  rounded-xl " href="scenes">
                 <v-img class="white--text align-end w-44 h-42" src="https://cdn.pixabay.com/photo/2016/01/24/17/25/flag-of-cambodia-1159274_1280.png">
                 </v-img>
-                <p class="text-2xl text-bold text-center pt-2">Cambodia</p>
+                <p class="text-2xl text-bold text-center pt-2">Cambodian</p>
             </v-card>
         </v-col>
         <v-col cols="6" sm="6" md="6">
